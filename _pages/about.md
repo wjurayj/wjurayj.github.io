@@ -18,6 +18,6 @@ social: true # includes social icons at the bottom of the page
 I am a PhD candidate at Johns Hopkins University, advised by <a href='https://www.cs.jhu.edu/~vandurme/'>Benjamin Van Durme</a>. My research focuses on reasoning methods using natural and formal languages. I'm also interested in social media analysis, cybersecurity, and cognitive science.
 
 
-I completed my Bachelor's and Master's degrees at Brown University, where I was fortunate to work with <a href='https://health-nlp.com/people/carsten.html'>Carsten Eickhoff</a>, <a href='https://cs.brown.edu/people/epavlick/'>Ellie Pavlick</a>, and <a href='https://cs.brown.edu/people/gdk/'>George Konidaris</a>.
+I completed my Bachelor's and Master's degrees in computer science at Brown University, where I was fortunate to work with <a href='https://health-nlp.com/people/carsten.html'>Carsten Eickhoff</a>, <a href='https://cs.brown.edu/people/epavlick/'>Ellie Pavlick</a>, and <a href='https://cs.brown.edu/people/gdk/'>George Konidaris</a>.
 
-When I'm not working, I enjoy soccer, learning new instruments, and reading about U.S. and world history.
+When I'm not working, I enjoy playing or watching soccer, learning new instruments, and reading about U.S. and world history.
