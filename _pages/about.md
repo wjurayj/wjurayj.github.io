@@ -15,4 +15,6 @@ social: true # includes social icons at the bottom of the page
 ---
 
 
-I am a PhD candidate advised by Benjamin Van Durme. I conduct research into reasoning methods over natural and formal languages. I completed my bachelors and masters degrees at Brown University, where I was fortunate to work with Carsten Eickhoff, Ellie Pavlick, and George Konidaris.
+I am a PhD candidate advised by Benjamin Van Durme. I conduct research into reasoning methods over natural and formal languages. My other interests include social media analysis, cybersecurity, and embodied agents.
+
+I completed my bachelors and masters degrees at Brown University, where I was fortunate to work with Carsten Eickhoff, Ellie Pavlick, and George Konidaris.
