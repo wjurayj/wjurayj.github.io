@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.clsp.jhu.edu/'>Center for Language and Speech Processing</a>
+subtitle: <a href='https://www.clsp.jhu.edu/'>Johns Hopkins Center for Language and Speech Processing</a>
 
 profile:
   align: right
