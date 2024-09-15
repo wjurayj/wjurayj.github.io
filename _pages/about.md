@@ -20,4 +20,4 @@ I am a PhD candidate at Johns Hopkins University, advised by <a href='https://ww
 
 I completed my Bachelor's and Master's degrees in computer science at Brown University, where I was fortunate to work with <a href='https://health-nlp.com/people/carsten.html'>Carsten Eickhoff</a>, <a href='https://cs.brown.edu/people/epavlick/'>Ellie Pavlick</a>, and <a href='https://cs.brown.edu/people/gdk/'>George Konidaris</a>.
 
-When I'm not working, I enjoy playing or watching soccer, learning new instruments, and reading about U.S. and world history.
+When I'm not working, I enjoy playing soccer, learning new instruments, and reading about history.
