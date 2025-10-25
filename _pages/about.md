@@ -15,9 +15,11 @@ social: true # includes social icons at the bottom of the page
 ---
 
 
-I am a PhD candidate at Johns Hopkins University, advised by <a href='https://www.cs.jhu.edu/~vandurme/'>Benjamin Van Durme</a>. My research focuses on uncertainty quantification in natural language generation, reasoning using natural and formal languages, and applications to high-stakes domains with non-zero costs. I'm also interested in social media analysis, cybersecurity, and cognitive science.
+I am a PhD student at Johns Hopkins University, advised by <a href='https://www.cs.jhu.edu/~vandurme/'>Benjamin Van Durme</a>. My research is centered on methods to help imperfect AI systems earn human trust. Recently, I’ve focused on making language models more effective at reasoning about and conveying their uncertainty. I’m also interested in the interpretability offered by symbolic reasoning systems and in techniques for adaptation to low-resource, high-stakes domains.
 
+Some questions that are currently on my mind:
+- How do reasoning models’ uncertainties respond to increased inference compute? <a href='https://arxiv.org/abs/2502.13962'>[Test-Time Scaling Confidence</a>
+- How can programmatic solvers augment language model’s existing reasoning capabilities? <a href='https://arxiv.org/abs/2508.21051'>[Legal Logic Programs</a> <a href='https://openreview.net/pdf?id=uFm9e4Ly26'>[programming MDP components]</a>
+- What learning algorithms will thrive in a data-scarce, compute-abundant regime?
 
-I completed my Bachelor's and Master's degrees in computer science at Brown University, where I was fortunate to work with <a href='https://health-nlp.com/people/carsten.html'>Carsten Eickhoff</a>, <a href='https://cs.brown.edu/people/epavlick/'>Ellie Pavlick</a>, and <a href='https://cs.brown.edu/people/gdk/'>George Konidaris</a>.
-
-When I'm not working, I enjoy playing soccer, learning new instruments, and reading about history.
+Before I came to Hopkins, I worked at Abnormal Security as a machine learning engineer training models to detect compromised accounts. I completed my Bachelor’s and Master’s degrees at Brown, where I was fortunate to be advised by <a href='https://health-nlp.com/people/carsten.html'>Carsten Eickhoff</a>, <a href='https://cs.brown.edu/people/epavlick/'>Ellie Pavlick</a>, and <a href='https://cs.brown.edu/people/gdk/'>George Konidaris</a>.
