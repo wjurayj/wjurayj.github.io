@@ -32,17 +32,39 @@
     abstract = "Scaling the test-time compute of large language models has demonstrated impressive performance on reasoning benchmarks. However, existing evaluations of test-time scaling make the strong assumption that a reasoning system should always give an answer to any question provided. This overlooks concerns about whether a model is confident in its answer, and whether it is appropriate to always provide a response. To address these concerns, we extract confidence scores during reasoning for thresholding model responses. We find that increasing compute budget at inference time not only helps models answer more questions correctly, but also increases confidence in correct responses. We then extend the current paradigm of zero-risk responses during evaluation by considering settings with non-zero levels of response risk, and suggest a recipe for reporting evaluations under these settings."
 }
 
-@misc{ou2025claimcheckgroundedllmcritiques,
-      title={CLAIMCHECK: How Grounded are LLM Critiques of Scientific Papers?}, 
-      author={Jiefu Ou and William Gantt Walden and Kate Sanders and Zhengping Jiang and Kaiser Sun and Jeffrey Cheng and William Jurayj and Miriam Wanner and Shaobo Liang and Candice Morgan and Seunghoon Han and Weiqi Wang and Chandler May and Hannah Recknor and Daniel Khashabi and Benjamin Van Durme},
-      year={2025},
-      eprint={2503.21717},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2503.21717}, 
-      pdf={https://arxiv.org/pdf/2503.21717}, 
+@inproceedings{ou-etal-2025-claimcheck,
+    title = "{CLAIMCHECK}: How Grounded are {LLM} Critiques of Scientific Papers?",
+    author = "Ou, Jiefu  and
+      Walden, William Gantt  and
+      Sanders, Kate  and
+      Jiang, Zhengping  and
+      Sun, Kaiser  and
+      Cheng, Jeffrey  and
+      Jurayj, William  and
+      Wanner, Miriam  and
+      Liang, Shaobo  and
+      Morgan, Candice  and
+      Han, Seunghoon  and
+      Wang, Weiqi  and
+      May, Chandler  and
+      Recknor, Hannah  and
+      Khashabi, Daniel  and
+      Van Durme, Benjamin",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.1185/",
+    pdf = "https://aclanthology.org/2025.findings-emnlp.1185.pdf",
+    pages = "21712--21735",
+    ISBN = "979-8-89176-335-7",
+    abstract = "A core part of scientific peer review involves providing expert critiques that directly assess the scientific claims a paper makes. While it is now possible to automatically generate plausible (if generic) reviews, ensuring that these reviews are sound and grounded in the papers' claims remains challenging. To facilitate LLM benchmarking on these challenges, we introduce CLAIMCHECK, an annotated dataset of NeurIPS 2023 and 2024 submissions and reviews mined from OpenReview. CLAIMCHECK is richly annotated by ML experts for weakness statements in the reviews and the paper claims that they dispute, as well as fine-grained labels of the validity, objectivity, and type of the identified weaknesses. We benchmark several LLMs on three claim-centric tasks supported by CLAIMCHECK, requiring models to (1) associate weaknesses with the claims they dispute, (2) predict fine-grained labels for weaknesses and rewrite the weaknesses to enhance their specificity, and (3) verify a paper{'}s claims with grounded reasoning. Our experiments reveal that cutting-edge LLMs, while capable of predicting weakness labels in (2), continue to underperform relative to human experts on all other tasks."
 }
-
 @inproceedings{hou-etal-2024-gaps,
     title = "Gaps or Hallucinations? Scrutinizing Machine-Generated Legal Analysis for Fine-grained Text Evaluations",
     author = "Hou, Abe  and
