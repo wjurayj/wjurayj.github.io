@@ -1,66 +1,112 @@
 ---
 ---
-@article{li2026self,
-  title={Self-Compacting Language Model Agents},
-  author={Li, Tianjian and Zhang, Jingyu and Jurayj, William and Wang, Xi and Jin, Chuanyang and Farajtabar, Mehrdad and Nalisnick, Eric and Khashabi, Daniel},
-  journal={arXiv preprint arXiv:2606.23525},
-  year={2026}
+@misc{li2026selfcompactinglanguagemodelagents,
+      title={Self-Compacting Language Model Agents}, 
+      author={Tianjian Li and Jingyu Zhang and William Jurayj and Xi Wang and Chuanyang Jin and Mehrdad Farajtabar and Eric Nalisnick and Daniel Khashabi},
+      year={2026},
+      eprint={2606.23525},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.23525}, 
+      pdf={https://arxiv.org/pdf/2606.23525}, 
+      abstract="Long agent traces composed of chains of thought and tool calls accumulate stale content that anchor subsequent generations, and eventually outgrow the context window. Existing scaffolds mitigate it with fixed-interval compaction triggered at a token threshold. Such triggers pay no heed to trajectory structure, risking discard of partial results mid-derivation or mid-search. We propose SelfCompact, a scaffold that allows the model itself to decide when and how to compact. Specifically, it pairs two inference-time elements: (i) a compaction tool the model invokes to summarize the accumulated context, and (ii) a lightweight rubric specifying when to fire (a sub-task has resolved, or the trajectory is converging) and when to suppress (mid-derivation, or when stuck). Both are needed. The tool alone is unevenly used across open-weight models, often invoked at unhelpful moments or not at all; the rubric alone cannot act. Together, they elicit effective adaptive compaction without any fine-tuning or external supervision. We present empirical results on six benchmarks (competitive math and agentic search) and seven models. Our results show that SelfCompact matches or exceeds fixed-interval summarization at a fraction of the token cost, improving over a no-summarization baseline by up to 18.1 points on math and 5-9 points on agentic search at 30-70% lower per-question cost. Our results expose a meta-cognitive gap: although unprompted models cannot reliably tell when their own context is rotting, a lightweight rubric closes this gap, reframing when to compact as a capability that scaffolds can supply without training."
 }
 
-@article{zuo2026rethinking,
-  title={Rethinking LoRA Memory Through the Lens of KV Cache Compression},
-  author={Zuo, Chunsheng and Wang, Liaoyaqi and Jurayj, William and Fleshman, William and Van Durme, Benjamin},
-  journal={arXiv preprint arXiv:2606.05698},
-  year={2026}
+@misc{zuo2026rethinkingloramemorylens,
+      title={Rethinking LoRA Memory Through the Lens of KV Cache Compression}, 
+      author={Chunsheng Zuo and Liaoyaqi Wang and William Jurayj and William Fleshman and Benjamin Van Durme},
+      year={2026},
+      eprint={2606.05698},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.05698}, 
+      pdf={https://arxiv.org/pdf/2606.05698}, 
+      abstract="Parametric retrieval augmentation encodes document information into lightweight, document-specific modules such as LoRA adapters, reducing the need to include all evidence as input context. However, it remains unclear how this parameter-side memory interacts with context-side memory stored in the KV cache. We study this interaction in document-level question answering by progressively evicting document key-value states and measuring when a document LoRA contributes beyond the retained context. We find that document LoRA adds little when the KV cache is largely intact, but becomes increasingly useful under aggressive compression, recovering 13-21 ROUGE-L points when no document context remains. The gain is largest when the base model encodes the document, and the adapter is applied only during answer generation, suggesting that document LoRA is better understood as decoding-time parametric memory than as a document encoder. Finally, QA-style supervision produces substantially stronger adapters than raw-context next-token-prediction. These results position document LoRA as a complementary memory channel whose value emerges precisely when context-side evidence is scarce."
 }
 
-@article{dou2026dar,
-  title={DAR: Deontic Reasoning with Agentic Harnesses},
-  author={Dou, Guangyao and Jurayj, William and Holzenberger, Nils and Van Durme, Benjamin},
-  journal={arXiv preprint arXiv:2606.05009},
-  year={2026}
+@misc{dou2026dardeonticreasoningagentic,
+      title={DAR: Deontic Reasoning with Agentic Harnesses}, 
+      author={Guangyao Dou and William Jurayj and Nils Holzenberger and Benjamin Van Durme},
+      year={2026},
+      eprint={2606.05009},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.05009}, 
+      pdf={https://arxiv.org/pdf/2606.05009}, 
+      abstract="Deontic reasoning is the task of answering questions by applying explicit rules and policies to case-specific facts, for example computing tax liability under a statute or determining the outcome of an immigration appeal. A key technical challenge for LLM-based deontic reasoning is that the relevant ruleset can be long and cross-referenced, so models may still fail to locate the rules needed for a particular reasoning step. We introduce Deontic Agentic Reasoning (DAR), an agentic reasoning setup in which the model interacts with the statutes on demand. We evaluate DAR under multiple harnesses on hard subsets of DeonticBench. Across these settings, we find that agentic harnesses can push the frontier on deontic reasoning tasks, but improvements are not uniform: weaker models often degrade on numerical tasks while consuming far more tokens."
 }
 
-@article{huang2026can,
-  title={Can Coding Agents Reproduce Findings in Computational Materials Science?},
-  author={Huang, Ziyang and Cao, Yi and Shargh, Ali K and Luo, Jing and Mei, Ruidong and Zaki, Mohd and Liu, Zhan and Bunstine, Wyatt and Jurayj, William and Goswami, Somdatta and others},
-  journal={arXiv preprint arXiv:2605.00803},
-  year={2026}
+@misc{huang2026codingagentsreproducefindings,
+      title={Can Coding Agents Reproduce Findings in Computational Materials Science?}, 
+      author={Ziyang Huang and Yi Cao and Ali K. Shargh and Jing Luo and Ruidong Mei and Mohd Zaki and Zhan Liu and Wyatt Bunstine and William Jurayj and Somdatta Goswami and Tyrel McQueen and Michael Shields and Jaafar El-Awady and Paulette Clancy and Benjamin Van Durme and Nicholas Andrews and William Walden and Daniel Khashabi},
+      year={2026},
+      eprint={2605.00803},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2605.00803}, 
+      pdf={https://arxiv.org/pdf/2605.00803}, 
+      abstract="Large language models are increasingly deployed as autonomous coding agents and have achieved remarkably strong performance on software engineering benchmarks. However, it is unclear whether such success transfers to computational scientific workflows, where tasks require not only strong coding ability, but also the ability to navigate complex, domain-specific procedures and to interpret results in the context of scientific claims. To address this question, we present AutoMat, a benchmark for evaluating LLM-based agents' ability to reproduce claims from computational materials science. AutoMat poses three interrelated challenges: recovering underspecified computational procedures, navigating specialized toolchains, and determining whether the resulting evidence supports a claim. By working closely with subject matter experts, we curate a set of claims from real materials science papers to test whether coding agents can recover and execute the end-to-end workflow needed to support (or undermine) such claims. We then evaluate multiple representative coding agent settings across several foundation models. Our results show that current LLM-based agents obtain low overall success rates on AutoMat, with the best-performing setting achieving a success rate of only 54.1%. Error analysis further reveals that agents perform worst when workflows must be reconstructed from paper text alone and that they fail primarily due to incomplete procedures, methodological deviations, and execution fragility. Taken together, these findings position AutoMat as both a benchmark for computational scientific reproducibility and a tool for diagnosing the current limitations of agentic systems in AI-for-science settings."
 }
 
-@article{wang2026process,
-  title={Process Supervision of Confidence Margin for Calibrated LLM Reasoning},
-  author={Wang, Liaoyaqi and Zuo, Chunsheng and Jurayj, William and Van Durme, Benjamin and Liu, Anqi},
-  journal={arXiv preprint arXiv:2604.23333},
-  year={2026}
+@misc{wang2026processsupervisionconfidencemargin,
+      title={Process Supervision of Confidence Margin for Calibrated LLM Reasoning}, 
+      author={Liaoyaqi Wang and Chunsheng Zuo and William Jurayj and Benjamin Van Durme and Anqi Liu},
+      year={2026},
+      eprint={2604.23333},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2604.23333}, 
+      pdf={https://arxiv.org/pdf/2604.23333}, 
+      abstract="Scaling test-time computation with reinforcement learning (RL) has emerged as a reliable path to improve large language models (LLM) reasoning ability. Yet, outcome-based reward often incentivizes models to be overconfident, leading to hallucinations, unreliable confidence-based control, and unnecessary compute allocation. We introduce Reinforcement Learning with Confidence Margin (\textbf{RLCM}), a calibration-aware RL framework that jointly optimizes correctness and confidence reliability via a margin-enhanced process reward over intermediate-budget completions. Rather than aligning confidence to correctness likelihoods, RLCM encourages to widen the confidence margin between correct and incorrect steps within a single reasoning trajectory. Across mathematical, code, logic and science benchmarks, our method substantially improves calibration while maintaining or improving accuracy. We further show that, with calibrated confidence signals, the resulting models enable more efficient conformal risk control and effective confidence-weighted aggregation."
 }
 
-@article{wanner2026weird,
-  title={Weird Generalization is Weirdly Brittle},
-  author={Wanner, Miriam and Collison, Hannah and Jurayj, William and Van Durme, Benjamin and Dredze, Mark and Walden, William},
-  journal={arXiv preprint arXiv:2604.10022},
-  year={2026}
+@misc{wanner2026weirdgeneralizationweirdlybrittle,
+      title={Weird Generalization is Weirdly Brittle}, 
+      author={Miriam Wanner and Hannah Collison and William Jurayj and Benjamin Van Durme and Mark Dredze and William Walden},
+      year={2026},
+      eprint={2604.10022},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.10022}, 
+      pdf={https://arxiv.org/pdf/2604.10022},
+      abstract="Weird generalization is a phenomenon in which models fine-tuned on data from a narrow domain (e.g. insecure code) develop surprising traits that manifest even outside that domain (e.g. broad misalignment)-a phenomenon that prior work has highlighted as a critical safety concern. Here, we present an extended replication study of key weird generalization results across an expanded suite of models and datasets. We confirm that surprising (and dangerous) traits can emerge under certain circumstances, but we find that weird generalization is exceptionally brittle: it emerges only for specific models on specific datasets, and it vanishes under simple training-time, prompt-based interventions. We find that the most effective interventions provide prompt context that makes the generalized behavior the expected behavior. However, we show that even very generic interventions that do not anticipate specific generalized traits can still be effective in mitigating weird generalization's effects. Our findings thus help clarify the nature of the safety threat that weird generalization poses and point toward an easily implemented set of solutions."
+
 }
 
-@article{zhang2026many,
-  title={Many-Tier Instruction Hierarchy in LLM Agents},
-  author={Zhang, Jingyu and Li, Tianjian and Jurayj, William and Zhan, Hongyuan and Van Durme, Benjamin and Khashabi, Daniel},
-  journal={arXiv preprint arXiv:2604.09443},
-  year={2026}
+@misc{zhang2026manytierinstructionhierarchyllm,
+      title={Many-Tier Instruction Hierarchy in LLM Agents}, 
+      author={Jingyu Zhang and Tianjian Li and William Jurayj and Hongyuan Zhan and Benjamin Van Durme and Daniel Khashabi},
+      year={2026},
+      eprint={2604.09443},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.09443}, 
+      pdf={https://arxiv.org/pdf/2604.09443}, 
+      abstract="Large language model agents receive instructions from many sources-system messages, user prompts, tool outputs, other agents, and more-each carrying different levels of trust and authority. When these instructions conflict, agents must reliably follow the highest-privilege instruction to remain safe and effective. The dominant paradigm, instruction hierarchy (IH), assumes a fixed, small set of privilege levels (typically fewer than five) defined by rigid role labels (e.g., system > user). This is inadequate for real-world agentic settings, where conflicts can arise across far more sources and contexts. In this work, we propose Many-Tier Instruction Hierarchy (ManyIH), a paradigm for resolving instruction conflicts among instructions with arbitrarily many privilege levels. We introduce ManyIH-Bench, the first benchmark for ManyIH. ManyIH-Bench requires models to navigate up to 12 levels of conflicting instructions with varying privileges, comprising 853 agentic tasks (427 coding and 426 instruction-following). ManyIH-Bench composes constraints developed by LLMs and verified by humans to create realistic and difficult test cases spanning 46 real-world agents. Our experiments show that even the current frontier models perform poorly (~40% accuracy) when instruction conflict scales. This work underscores the urgent need for methods that explicitly target fine-grained, scalable instruction conflict resolution in agentic settings."
 }
 
-@article{zhang2026unified,
-  title={Unified multimodal uncertain inference},
-  author={Zhang, Dengjia and Martin, Alexander and Jurayj, William and Murray, Kenton and Van Durme, Benjamin and Kriz, Reno},
-  journal={arXiv preprint arXiv:2604.08701},
-  year={2026}
+@misc{zhang2026unifiedmultimodaluncertaininference,
+      title={Unified Multimodal Uncertain Inference}, 
+      author={Dengjia Zhang and Alexander Martin and William Jurayj and Kenton Murray and Benjamin Van Durme and Reno Kriz},
+      year={2026},
+      eprint={2604.08701},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2604.08701}, 
+      pdf={https://arxiv.org/pdf/2604.08701}, 
+
 }
 
-@article{dou2026deonticbench,
-  title={DeonticBench: A Benchmark for Reasoning over Rules},
-  author={Dou, Guangyao and Brena, Luis and Deo, Akhil and Jurayj, William and Zhang, Jingyu and Holzenberger, Nils and Van Durme, Benjamin},
-  journal={arXiv preprint arXiv:2604.04443},
-  year={2026}
+@misc{dou2026deonticbenchbenchmarkreasoningrules,
+  title={DeonticBench: A Benchmark for Reasoning over Rules}, 
+  author={Guangyao Dou and Luis Brena and Akhil Deo and William Jurayj and Jingyu Zhang and Nils Holzenberger and Benjamin Van Durme},
+  year={2026},
+  eprint={2604.04443},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2604.04443},
+  pdf={https://arxiv.org/pdf/2604.04443},
+  abstract="Reasoning with complex, context-specific rules remains challenging for large language models (LLMs). In legal and policy settings, this manifests as deontic reasoning: reasoning about obligations, permissions, and prohibitions under explicit rules. While many recent benchmarks emphasize short-context mathematical reasoning, fewer focus on long-context, high-stakes deontic reasoning. To address this gap, we introduce DEONTICBENCH, a benchmark of 6,232 tasks across U.S. federal taxes, airline baggage policies, U.S. immigration administration, and U.S. state housing law. These tasks can be approached in multiple ways, including direct reasoning in language or with the aid of symbolic computation. Besides free-form chain-of-thought reasoning, DEONTICBENCH enables an optional solver-based workflow in which models translate statutes and case facts into executable Prolog, leading to formal problem interpretations and an explicit program trace. We release reference Prolog programs for all instances. Across frontier LLMs and coding models, best hard-subset performance reaches only 44.4% on SARA Numeric and 46.6 macro-F1 on Housing. We further study training with supervised fine-tuning and reinforcement learning for symbolic program generation. Although training improves Prolog generation quality, current RL methods still fail to solve these tasks reliably. Overall, DEONTICBENCH provides a benchmark for studying context-grounded rule reasoning in real-world domains under both symbolic and non-symbolic settings."
 }
 
 @inproceedings{
@@ -69,7 +115,8 @@
   author={Xi Wang and Anushri Suresh and Alvin Zhang and Rishi More and William Jurayj and Mehrdad Farajtabar and Daniel Khashabi and Eric Nalisnick},
   booktitle={Forty-third International Conference on Machine Learning},
   year={2026},
-  url={https://openreview.net/forum?id=noDJPmA3ha}
+  url={https://openreview.net/forum?id=noDJPmA3ha},
+  abstract="Reasoning Large Language Models (LLMs) enable test-time scaling, with dataset-level accuracy improving as the token budget increases, motivating adaptive reasoning -- spending tokens when they improve reliability and stopping early when additional computation is unlikely to help. However, setting the token budget, as well as the threshold for adaptive reasoning, is a practical challenge that entails a fundamental risk-accuracy trade-off. We re-frame the budget setting problem as risk control, limiting the error rate while minimizing compute. Our framework introduces an upper threshold that stops reasoning when the model is confident (risking incorrect output) and a novel parametric lower threshold that preemptively stops unsolvable instances (risking premature stoppage). Given a target risk and a validation set, we use distribution-free risk control to optimally specify these stopping mechanisms. For scenarios with multiple budget controlling criteria, we incorporate an efficiency loss to select the most computationally efficient exiting mechanism. Empirical results across diverse reasoning tasks and models demonstrate the effectiveness of our risk control approach, demonstrating computational efficiency gains from the lower threshold and ensemble stopping mechanisms while adhering to the user-specified risk target."
 }
 
 @inproceedings{jurayj2026language,
@@ -79,7 +126,9 @@
   volume={40},
   number={45},
   pages={38688--38698},
-  year={2026}
+  year={2026},
+  pdf="https://arxiv.org/pdf/2508.21051",
+  abstract="According to the United States Internal Revenue Service, ``the average American spends $270 and 13 hours filing their taxes''. Even beyond the U.S., tax filing requires complex reasoning, combining application of overlapping rules with numerical calculations. Because errors can incur costly penalties, any automated system must deliver high accuracy and auditability, making modern large language models (LLMs) poorly suited for this task. We propose an approach that integrates LLMs with a symbolic solver to calculate tax obligations. We evaluate variants of this system on the challenging StAtutory Reasoning Assessment (SARA) dataset, and include a novel method for estimating the cost of deploying such a system based on real-world penalties for tax errors. We further show how combining up-front translation of plain-text rules into formal logic programs, combined with intelligently retrieved exemplars for formal case representations, can dramatically improve performance on this task and reduce costs to well below real-world averages. Our results demonstrate the effectiveness of applying semantic parsing methods to statutory reasoning, and show promising economic feasibility of neuro-symbolic architectures for increasing access to reliable tax assistance."
 }
 
 @inproceedings{jurayj-etal-2025-final,
