@@ -94,6 +94,7 @@
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2604.08701}, 
       pdf={https://arxiv.org/pdf/2604.08701}, 
+      abstract="We introduce Unified Multimodal Uncertain Inference (UMUI), a multimodal inference task spanning text, audio, and video, where models must produce calibrated probability estimates of hypotheses conditioned on a premise in any modality or combination. While uncertain inference has been explored in text, extension to other modalities has been limited to single-modality binary entailment judgments, leaving no framework for fine-grained probabilistic reasoning in or across other modalities. To address this, we curate a human-annotated evaluation set with scalar probability judgments across audio, visual, and audiovisual settings, and additionally evaluate on existing text and audio benchmarks. We introduce CLUE (Calibrated Latent Uncertainty Estimation), which combines self-consistent teacher calibration and distribution-based confidence probing to produce calibrated predictions. We demonstrate that our 3B-parameter model achieves equivalent or stronger performance than baselines up to 32B parameters across all modalities."
 
 }
 
@@ -116,6 +117,7 @@
   booktitle={Forty-third International Conference on Machine Learning},
   year={2026},
   url={https://openreview.net/forum?id=noDJPmA3ha},
+  pdf={https://openreview.net/pdf?id=noDJPmA3ha},
   abstract="Reasoning Large Language Models (LLMs) enable test-time scaling, with dataset-level accuracy improving as the token budget increases, motivating adaptive reasoning -- spending tokens when they improve reliability and stopping early when additional computation is unlikely to help. However, setting the token budget, as well as the threshold for adaptive reasoning, is a practical challenge that entails a fundamental risk-accuracy trade-off. We re-frame the budget setting problem as risk control, limiting the error rate while minimizing compute. Our framework introduces an upper threshold that stops reasoning when the model is confident (risking incorrect output) and a novel parametric lower threshold that preemptively stops unsolvable instances (risking premature stoppage). Given a target risk and a validation set, we use distribution-free risk control to optimally specify these stopping mechanisms. For scenarios with multiple budget controlling criteria, we incorporate an efficiency loss to select the most computationally efficient exiting mechanism. Empirical results across diverse reasoning tasks and models demonstrate the effectiveness of our risk control approach, demonstrating computational efficiency gains from the lower threshold and ensemble stopping mechanisms while adhering to the user-specified risk target."
 }
 
@@ -219,6 +221,7 @@
     year={2024},
     url={https://openreview.net/forum?id=uFm9e4Ly26},
     pdf={https://openreview.net/pdf?id=uFm9e4Ly26},
+    abstract="While significant efforts have been made to leverage natural language to accelerate reinforcement learning, utilizing diverse forms of language efficiently remains unsolved. Existing methods focus on mapping natural language to individual elements of MDPs such as reward functions or policies, but such approaches limit the scope of language they consider to make such mappings possible. We present an approach for leveraging general language advice by translating it to a grounded formal language capable of expressing information about every element of an MDP and its solution including policies, plans, reward functions, and transition functions. We also introduce a new model-based reinforcement learning algorithm called RLang-Dyna-Q that is capable of leveraging all such advice. We demonstrate the generality of our approach in a number of experiments by informing agents with a variety of natural language advice, leading to significant performance gains."
 }
 
 @inproceedings{jurayj-etal-2022-garden,
